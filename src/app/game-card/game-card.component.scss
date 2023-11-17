@@ -1,0 +1,33 @@
+.card {
+    border-radius: 5px;
+
+    width: 150px;
+    height: 150px;
+
+    cursor: pointer;
+    transform-style: preserve-3d;
+}
+
+.back,
+.front {
+    border-radius: 5px;
+    backface-visibility: hidden;
+    width: 150px;
+    height: 150px;
+}
+
+.back {
+    transform: rotateY(0deg);
+}
+
+.front {
+    margin-top: -150px;
+    transform: rotateY(180deg);
+}
+
+img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 5px;
+}

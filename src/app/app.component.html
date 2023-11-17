@@ -1,0 +1,9 @@
+<mat-toolbar color="primary" class="text-center">
+    Crunchy Kernel Angular Training Memory Game
+  </mat-toolbar>
+  <div>
+    <div class="grid">
+      <app-game-card *ngFor="let c of cards; let idx=index" [data]="c" (cardClicked)="cardClicked(idx)">
+      </app-game-card>
+    </div>
+  </div>
